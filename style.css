@@ -25,7 +25,7 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	top: 0px;
 	width: 128px;
 	height: 128px;
-	background-image: url(dice/big3.png);
+	background-image: url(dice/big1.png);
 	background-size: 128px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -36,7 +36,7 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	
 	cursor: url(cursorpointer.gif), pointer;
 	
-} #Dice:hover{ background-image: url(dice/diceroll/dicerollin3.gif); background-size: 128px;
+} #Dice:hover{ background-image: url(dice/diceroll/dicerollin.gif); background-size: 128px;
 	background-repeat: no-repeat;
 	background-position: center; }
 #Dice:active{ background-size: 100px; }
@@ -48,7 +48,7 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	top: 0px;
 	width: 128px;
 	height: 128px;
-	background-image: url(dice/result2.png);
+	background-image: url(dice/result1.png);
 	background-size: 128px;
 	background-repeat: no-repeat;
 	background-position: center;
