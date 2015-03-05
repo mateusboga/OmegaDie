@@ -24,7 +24,7 @@ function CharCreation() {
 	+ '<div id="luckList" class="link linkdice" onclick="setL()">Luck</div>'
 	+ "Luck is a stat of chance. It decreases with use. See 'Luck' for more info"
 	+ "<p>Once you've set all your stats, go to the next page to learn how to fight.<p>"
-	+ '<div class="link unselectable" onclick="statsDone()">Next - Fighting »</div>'
+	+ '<div class="link unselectable" onclick="statsDone()">Next - Fighting</div>'
 	);	R();
 };
 function setOp(x) { document.getElementById("DiceOp").innerHTML = ('+'+x); };
@@ -82,7 +82,7 @@ function fighting() {
 	+ ' to form his Hit Damage, which is the amount of STR you will lose by his attack'
 	+ '<p> When you equip a weapon, your Dex level is increased, and that increases your total hit damage. '
 	+ 'Sometimes you have special items that increase your damage, but are consumed after you use them once, like arrows or bombs'
-	+ '<div class="link unselectable" onclick="howluck()">Next - Luck »</div>'
+	+ '<div class="link unselectable" onclick="howluck()">Next - Luck</div>'
 	); R();
 	ClearDice();
 };
@@ -103,7 +103,7 @@ function howluck() {
 	+ "<p>Throughout the course of your adventure, you will often be asked to test your luck. But once in a while, "
 	+ "You might be asked to Test Your Dexterity, Strength or even Mana. "
 	+ "In these cases, you do the same as you would with LUCK, but unlike Luck, DEX, STR, and MANA do not decrease when you test them."
-	+ '<div class="link unselectable" onclick="howmana()">Next - Mana »</div>'
+	+ '<div class="link unselectable" onclick="howmana()">Next - Mana</div>'
 	
 	); R();
 };
@@ -120,7 +120,7 @@ function howmana() {
 	+ '<p>Dice + MANA = Magical Damage'
 	+ "<p>The Magical Damage is the damage you will deal to your opponent's DEX. The same happens with them. If you roll the dice to their Spell attack, their MANA will add to this number"
 	+ ' and you will lose that much Dexterity'
-	+ '<div class="link unselectable" onclick="howitems()">Next - Items »</div>'
+	+ '<div class="link unselectable" onclick="howitems()">Next - Items</div>'
 	); R();
 }
 
