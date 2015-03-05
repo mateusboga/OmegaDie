@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>RPG Mode</title>
+		<link rel="icon" href="icon.png"/>
+		<link rel="stylesheet" href="style.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<script src="game.js"></script>
+		<script src="pages.js"></script>
+		<script src="adventures/DoD.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="gameArea">
+				<div id="title"></div>
+				<div id="page"></div>
+				<div id="shadow"></div>
+			</div>
+			<div id="Backpack" class="unselectable">
+				<div id="PackIcon" onclick="LoadPack()"><div id="PackImage"></div></div>
+				<div id="PackName">Backpack</div>
+				<div id="PackItems">
+					
+					<div class="itemP"></div>
+				</div>
+			</div>
+			<div id="DexNum"><div id="DexN"></div><div id="Dex+" class="upperN"></div><div id="Dex-" class="lowerN"></div></div>
+			<div id="StrNum"><div id="StrN"></div><div id="Str+" class="upperN"></div><div id="Str-" class="lowerN"></div></div>
+			<div id="ManaNum"><div id="ManaN"></div><div id="Mana+" class="upperN"></div><div id="Mana-" class="lowerN"></div></div>
+			<div id="LuckNum"><div id="LuckN"></div></div>
+			<div id="Dice" class="unselectable" onclick="RollDice()"></div>
+			<div id="DiceOp" class="unselectable"></div>
+			<div id="DiceResult" class="unselectable" onclick="ClearDice()"> <div id="Result"/> </div>
+		</div>
+		<div id="loading" class="unselectable">
+			<div id="loadingIcon"></div>
+			<div id="loadingtext">Loading...</div>
+		</div>
+	</body>
+</html>
