@@ -185,3 +185,5 @@ function beginAdventure() {
 		
 	); R();
 };
+
+onReady(function () { show('loading', false); });
