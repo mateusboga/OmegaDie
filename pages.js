@@ -185,8 +185,3 @@ function beginAdventure() {
 		
 	); R();
 };
-
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-};
-onReady(function () { show('loading', false); });
