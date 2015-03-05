@@ -66,9 +66,9 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	height: 128px;
 	width: 256px;
 	background: url(logo.png);
-	background-size: 64px 128px;
+	background-size: 128px 64px;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: right;
 }
 #shadow {
 	position: absolute;
