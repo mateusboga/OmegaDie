@@ -154,6 +154,9 @@ function show(id, value) {
 };
  
 window.onload = function() {
+	Title = readCookie('title');
+	Page = readCookie('page');
+	Inventory = readCookie('inventory');
 	document.getElementById("title").innerHTML = Title;
 	document.getElementById("page").innerHTML = Page;
 	document.getElementById("PackItems").innerHTML = Inventory;
@@ -171,4 +174,9 @@ function sleep(milliseconds) {
 };
 function R() {
 	document.getElementById("title").innerHTML = Title; document.getElementById("page").innerHTML = Page;
+}
+window.onClose = function() {
+	createCookie('title', Title, 3000);
+	createCookie('page', Page, 3000);
+	createCookie('inventory', Inventory, 3000);
 }
