@@ -43,6 +43,10 @@ window.setInterval(function(){
 	if (M > 0) { document.getElementById("ManaN").innerHTML = Mana + ' MANA'; };
 	if (L > 0) { document.getElementById("LuckN").innerHTML = Luck + ' LUCK'; };
 	
+	createCookie('title', Title, 3000);
+	createCookie('page', Page, 3000);
+	createCookie('inventory', Inventory, 3000);
+	
 }, 100);
 
 function RollDice() {
@@ -154,18 +158,14 @@ function show(id, value) {
 };
  
 window.onload = function() {
-	
-	document.getElementById("title").innerHTML = Title;
-	document.getElementById("page").innerHTML = Page;
-	document.getElementById("PackItems").innerHTML = Inventory;
-	Start();
-	createCookie('title', Title, 3000);
-	createCookie('page', Page, 3000);
-	createCookie('inventory', Inventory, 3000);
 	var CookieTitle = readCookie('title');
 	Title = CookieTitle;
 	var CookiePage = readCookie('page');
 	Page = CookiePage;
+	document.getElementById("title").innerHTML = Title;
+	document.getElementById("page").innerHTML = Page;
+	document.getElementById("PackItems").innerHTML = Inventory;
+	Start();
 	
 	onReady(function () { show('loading', false); }); 
 };
@@ -181,6 +181,7 @@ function R() {
 	document.getElementById("title").innerHTML = Title; document.getElementById("page").innerHTML = Page;
 }
 window.onClose = function() {
+	
 	createCookie('title', Title, 3000);
 	createCookie('page', Page, 3000);
 	createCookie('inventory', Inventory, 3000);
