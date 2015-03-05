@@ -2,6 +2,8 @@ N = 0; //Number of the dice
 Rolled = 0; //Number of times the dice has been rolled
 Title = "";
 Page = "";
+Title2 = '';
+Page2 = '';
 Inventory = "";
 Dset = 0;
 Sset = 0;
@@ -155,11 +157,10 @@ function show(id, value) {
 };
  
 window.onload = function() {
-	Title = readCookie('title');
-	Page = readCookie('page');
+	Title2 = readCookie('title'); Title = Title2;
+	Page2 = readCookie('page'); Page = Page2;
 	Inventory = readCookie('inventory');
-	document.getElementById("title").innerHTML = Title;
-	document.getElementById("page").innerHTML = Page;
+	R();
 	document.getElementById("PackItems").innerHTML = Inventory;
 	Start();
 	
