@@ -24,7 +24,7 @@ function CharCreation() {
 	+ '<div id="luckList" class="link linkdice" onclick="setL()">Luck</div>'
 	+ "Luck is a stat of chance. It decreases with use. See 'Luck' for more info"
 	+ "<p>Once you've set all your stats, go to the next page to learn how to fight.<p>"
-	+ '<div class="link unselectable" onclick="statsDone()">Next - Fighting</div>'
+	+ '<div class="link unselectable" onclick="statsDone()">Next - Fighting </div>'
 	);	R();
 };
 function setOp(x) { document.getElementById("DiceOp").innerHTML = ('+'+x); };
