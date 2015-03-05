@@ -414,7 +414,7 @@ function DoDRoom1Hide() {
 		
 		); R();
 }
-function DoDHide2() {
+function DoDRoom1Hide2() {
 	if (N < Dex || N == Dex) {
 		Page = ('(Lucky!)<p>'
 		+ 'You are quick and hide below the table just in time. '
