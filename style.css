@@ -130,9 +130,9 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	 cursor: url(cursorpointer.gif), pointer;
 	position: relative;width:45px;height:45px;margin: auto;
 	top: 10px;
-	background: url('pack.png') center center; background-size: 45px; background-repeat: no-repeat;
+	background: url('Pack.png') center center; background-size: 45px; background-repeat: no-repeat;
 	
-} #PackImage:hover{ background: url('packhover.png') center center; background-size: 45px; background-repeat: no-repeat; }
+} #PackImage:hover{ background: url('PackHover.png') center center; background-size: 45px; background-repeat: no-repeat; }
 
 #PackItems {
 	position: absolute;left:30px;right:30px;top:70px;bottom:30px;
