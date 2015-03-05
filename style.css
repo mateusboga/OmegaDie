@@ -70,6 +70,7 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	background-repeat: no-repeat;
 	background-position: bottom;
 	cursor: url(cursorpointer.gif), pointer;
+	color: rgba(0, 0, 0, 0.0);
 }
 #shadow {
 	position: absolute;
