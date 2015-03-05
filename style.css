@@ -71,7 +71,7 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	background-position: bottom;
 	cursor: url(cursorpointer.gif), pointer;
 	color: rgba(0, 0, 0, 0.0);
-}
+} #Logo:hover { background: url(logohover.png); }
 #shadow {
 	position: absolute;
 	width: 600px;
