@@ -398,7 +398,7 @@ function DoDCorridor2DoorOpen() {
 }
 function DoDCorridor2DoorEnter() {
 	S_Step1.play();
-	Page = ('You open the door and enter. The room seems empty at first, but suddenly a figure enter through the other door.<p>'
+	Page = ('You open the door and enter. The room seems empty at first, but suddenly a figure enters through the other door.<p>'
 	+ 'You have to be quick.<p>'
 	+ '<div class="link unselectable" onclick="DoDRoom1Attack()">Attack whoever comes</div>'
 	+ '<div class="link unselectable" onclick="DoDRoom1Hide()">Hide</div>'
@@ -426,11 +426,10 @@ function DoDRoom1Hide2() {
 	};
 	if (N > Dex) {
 		Page = ('(Unlucky!)<p>'
-		+ '( -2 STR, -3 DEX)<p>'
-		+ 'You used your dominant hand and you are now less efficient in fighting. '
-		+ 'Plus the pain reduces your strength. You step back and reconsider your choices.<p>'
-		+ '<div class="link unselectable" onclick="DoDCorridor2DoorOpen()">Try to open the door</div>'
-		+ '<div class="link unselectable" onclick="DoDHallway2L()">Move back and choose the other corridor</div>'
+		+ 'You did not have time to hide when he entered. The man is short, wears a bathrobe and looks at you '
+		+ 'surprised.<p>'
+		+ '"And who are you?", he asks drily.<p>'
+		+ 'What do you say?'
 		
 		); R();
 	};
