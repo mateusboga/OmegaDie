@@ -155,10 +155,9 @@ function show(id, value) {
 };
  
 window.onload = function() {
-	var CookieTitle = readCookie('title');
-	Title = CookieTitle;
-	var CookiePage = readCookie('page');
-	Page = CookiePage;
+	Title = readCookie('title');
+	Page = readCookie('page');
+	Inventory = readCookie('inventory');
 	document.getElementById("title").innerHTML = Title;
 	document.getElementById("page").innerHTML = Page;
 	document.getElementById("PackItems").innerHTML = Inventory;
