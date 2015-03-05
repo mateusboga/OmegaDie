@@ -31,7 +31,7 @@ var S_Depth1 = new Audio("sounds/depth1.wav");
 var S_Door1 = new Audio("sounds/dooropen1.wav"); var S_Door2 = new Audio("sounds/dooropen2.wav"); var S_Door3 = new Audio("sounds/dooropen3.wav"); var S_Door4 = new Audio("sounds/dooropen4.wav");
 var S_Drawer = new Audio("sounds/drawer1.wav");
 var S_Locked1 = new Audio("sounds/locked1.wav"); var S_Locked2 = new Audio("sounds/locked2.wav");
-var S_Openchest = new Audio("sounds/openchest.wav");
+var S_Openchest = new Audio("sounds/openchest2.wav");
 
 window.setInterval(function(){
 	
