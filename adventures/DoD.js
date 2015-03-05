@@ -75,7 +75,7 @@ function DoDRubyChest() {
 	S_Openchest.play();
 	Page = ( '"Click"<p>'
 	+ 'The chest opens back. The inside is lined with soft red silk. Inside, you find'
-	+ ' a Golden Ring with a red ruby incrustated in it.'
+	+ ' a Golden Ring with a red ruby inlaid in it.'
 	+ '<div class="link unselectable" onclick="DoDtakeRubyRing()">Take Golden Ring With Ruby</div>'
 	+ '(Increases MANA by 2 when equipped)'
 	+ '<p>There is a wooden door opposite to the door you just came through.'

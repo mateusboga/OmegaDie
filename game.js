@@ -154,10 +154,7 @@ function show(id, value) {
 };
  
 window.onload = function() {
-	var CookieTitle = readCookie('title');
-	Title = CookieTitle;
-	var CookiePage = readCookie('page');
-	Page = CookiePage;
+	
 	document.getElementById("title").innerHTML = Title;
 	document.getElementById("page").innerHTML = Page;
 	document.getElementById("PackItems").innerHTML = Inventory;
@@ -165,6 +162,10 @@ window.onload = function() {
 	createCookie('title', Title, 3000);
 	createCookie('page', Page, 3000);
 	createCookie('inventory', Inventory, 3000);
+	var CookieTitle = readCookie('title');
+	Title = CookieTitle;
+	var CookiePage = readCookie('page');
+	Page = CookiePage;
 	
 	onReady(function () { show('loading', false); }); 
 };
