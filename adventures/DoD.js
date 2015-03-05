@@ -12,8 +12,6 @@ Title1 = '';
 Page1 = '';
 Reading = 0;
 
-onReady(function () { show('loading', false); });
-
 function DoDStart() {
 	Title = 'Dungeon of Dread';
 	Page = ( '<p>'
@@ -437,3 +435,5 @@ function DoDHide2() {
 		); R();
 	};
 }
+
+onReady(function () { show('loading', false); });
