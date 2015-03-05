@@ -12,6 +12,7 @@ Title1 = '';
 Page1 = '';
 Reading = 0;
 
+onReady(function () { show('loading', false); });
 
 function DoDStart() {
 	Title = 'Dungeon of Dread';
