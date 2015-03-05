@@ -158,6 +158,8 @@ window.onload = function() {
 	document.getElementById("page").innerHTML = Page;
 	document.getElementById("PackItems").innerHTML = Inventory;
 	Start();
+	
+	onReady(function () { show('loading', false); }); 
 };
 function sleep(milliseconds) {
   var start = new Date().getTime();
