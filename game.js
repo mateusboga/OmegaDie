@@ -152,7 +152,7 @@ function onReady(callback) {
 function show(id, value) {
     document.getElementById(id).style.display = value ? 'block' : 'none';
 };
-
+onReady(function () { show('loading', false); });
 window.onload = function() {
 	document.getElementById("title").innerHTML = Title;
 	document.getElementById("page").innerHTML = Page;

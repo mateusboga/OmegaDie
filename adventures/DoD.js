@@ -435,5 +435,3 @@ function DoDHide2() {
 		); R();
 	};
 }
-
-onReady(function () { show('loading', false); });
