@@ -397,3 +397,42 @@ function DoDCorridor2DoorOpen() {
 		
 		); R();
 }
+function DoDCorridor2DoorEnter() {
+	S_Step1.play();
+	Page = ('You open the door and enter. The room seems empty at first, but suddenly a figure enter through the other door.<p>'
+	+ 'You have to be quick.<p>'
+	+ '<div class="link unselectable" onclick="DoDRoom1Attack()">Attack whoever comes</div>'
+	+ '<div class="link unselectable" onclick="DoDRoom1Hide()">Hide</div>'
+	+ '<div class="link unselectable" onclick="DoDRoom1Stay()">Wait for them to see you</div>'
+		
+		); R();
+}
+function DoDRoom1Hide() {
+	S_Step1.play();
+	Page = ( '<a style="font-weight: bold;">Test Your Dexterity</a><p>'
+	+ "If the number you get is bigger, you won't be able to hide in time."
+	+ '<div class="link unselectable" onclick="DoDRoom1Hide2()">Done</div>'
+		
+		); R();
+}
+function DoDHide2() {
+	if (N < Dex || N == Dex) {
+		Page = ('(Lucky!)<p>'
+		+ 'You are quick and hide below the table just in time. '
+		+ 'You can only see the feet of the person who entered. He did not notice your presence.<p>'
+		+ 'The man walks past the table and sits in a chair next to the fire. '
+		+ 'He dresses a bathrobe and holds a coffee cup on his hand.'
+		
+		); R();
+	};
+	if (N > Dex) {
+		Page = ('(Unlucky!)<p>'
+		+ '( -2 STR, -3 DEX)<p>'
+		+ 'You used your dominant hand and you are now less efficient in fighting. '
+		+ 'Plus the pain reduces your strength. You step back and reconsider your choices.<p>'
+		+ '<div class="link unselectable" onclick="DoDCorridor2DoorOpen()">Try to open the door</div>'
+		+ '<div class="link unselectable" onclick="DoDHallway2L()">Move back and choose the other corridor</div>'
+		
+		); R();
+	};
+}
