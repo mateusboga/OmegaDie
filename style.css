@@ -63,8 +63,8 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
-	height: 128px;
-	width: 256px;
+	height: 64px;
+	width: 128px;
 	background: url(logo.png);
 	background-size: 128px 64px;
 	background-repeat: no-repeat;
