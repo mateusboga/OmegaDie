@@ -196,6 +196,7 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	width:50px;
 	height:50px;
 	top:0px;
+	background-size: 50px;
 } .itemName{
 	position: relative; top: -50px; left: 60px;
 } .itemOptions{
