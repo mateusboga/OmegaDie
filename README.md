@@ -4,3 +4,6 @@ Currently under development, it includes a d20 Die System, an inventory and a fi
 
 # Play
 Play Omega Dye at: http://mateusboga.github.io/OmegaDie/
+
+# Create your own Adventure!
+The Omega Die's adventure system is very simple so that anyone can grab the code and create their own adventures. Easly customizable, you just require map-making skill.
