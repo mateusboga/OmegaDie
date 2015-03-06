@@ -53,7 +53,7 @@ function DoDEmeraldChest() {
 	if (single == 0) {
 		MPotions++;
 		Inventory = (Inventory
-		+ '<div class="itemP"><div class="itemIcon" style="background: url(items/manapotion.png); background-size: 50px 50px;"></div><div class="itemName"  style="color: #491">Mana Potion ' + MPotions + 'x</div><div class="itemOptions" onclick="drinkManaPotion()">Drink</div></div>'
+		+ '<div class="itemP"><div class="itemIcon" style="background-image: url(items/manapotion.png)"></div><div class="itemName"  style="color: #491">Mana Potion ' + MPotions + 'x</div><div class="itemOptions" onclick="drinkManaPotion()">Drink</div></div>'
 		); document.getElementById("PackItems").innerHTML = Inventory; S_CloseP.play();
 		single++
 	}
