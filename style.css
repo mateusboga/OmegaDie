@@ -123,8 +123,8 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	transition: left 0.2s;
     -webkit-transition: left 0.2s;
 	
-	box-shadow: 0px 0xp 80px black;
-	-webkit-box-shadow: 0px 0px 80px black;
+	box-shadow: 0px 0xp 10px black;
+	-webkit-box-shadow: 0px 0px 10px black;
 	
 } #PackIcon{
 	position: relative; width:64px;height:64px;left: 500px;
@@ -174,8 +174,8 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	transition: left 0.2s;
     -webkit-transition: left 0.2s;
 	
-	box-shadow: 0px 0xp 80px black;
-	-webkit-box-shadow: 0px 0px 80px black;
+	box-shadow: 0px 0xp 10px black;
+	-webkit-box-shadow: 0px 0px 10px black;
 	
 } #OptionsIcon{
 	position: relative; width:64px;height:64px;left: 500px;
