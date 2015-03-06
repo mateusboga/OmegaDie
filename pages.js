@@ -7,6 +7,7 @@ function Start() {
 	Title = Title2;
 	Page = Page2;
 	R();
+	Pageready = 1;
 };
 
 function CharCreation() {

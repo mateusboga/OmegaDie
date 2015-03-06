@@ -3,7 +3,7 @@ Rolled = 0; //Number of times the dice has been rolled
 Title = "";
 Page = "";
 Title2 = '';
-Page2 = '';
+Page2 = ''; Pageready = 0;
 Inventory = "";
 Dset = 0;
 Sset = 0;
@@ -47,10 +47,11 @@ window.setInterval(function(){
 	
 }, 100);
 window.setInterval(function() {
-
-	createCookie('title', Title, 3000);
-	createCookie('page', Page, 3000);
-	createCookie('inventory', Inventory, 3000);
+	if (Pageready == 1){
+		createCookie('title', Title, 3000);
+		createCookie('page', Page, 3000);
+		createCookie('inventory', Inventory, 3000);
+	};
 }, 5000);
 
 function RollDice() {
