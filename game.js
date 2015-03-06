@@ -181,4 +181,5 @@ window.onClose = function() {
 	createCookie('title', Title, 3000);
 	createCookie('page', Page, 3000);
 	createCookie('inventory', Inventory, 3000);
+	window.alert('yes');
 }
