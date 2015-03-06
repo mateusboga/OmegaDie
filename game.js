@@ -142,12 +142,14 @@ function LoadPack() {
 		Pack = document.getElementById("Backpack");
 		Pack.style.left = (Pack.style.left = "-500px");
 		S_CloseP.play();
+		Pack.style.visibility = (Pack.style.visibility = "visible");
 	}
 	if (options == 1){
 		options = 0;
 		Options = document.getElementById("Options");
 		Options.style.left = (Options.style.left = "-500px");
 		S_CloseP.play();
+		Options.style.visibility = (Options.style.visibility = "visible");
 	}
 	ClearDice();
 };
