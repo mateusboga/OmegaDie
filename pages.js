@@ -4,7 +4,8 @@ function Start() {
 	if (Page2 == "") {Page = (
 	'<p><div class="link unselectable" onclick="CharCreation()">Start</div>' 
 	);} else { Page = Page2; }
-	R();
+	if (Inventory2 == "") {Inventory = ''} else { Inventory = Inventory2; }
+	R(); document.getElementById("PackItems").innerHTML = Inventory;
 	Pageready = 1;
 };
 
