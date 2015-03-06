@@ -50,7 +50,7 @@ window.setInterval(function() {
 		createCookie('page', Page, 3000);
 		createCookie('inventory', Inventory, 3000);
 	};
-}, 5000);
+}, 1000);
 
 function RollDice() {
 	//Random Roll
