@@ -193,8 +193,13 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	position: relative;width:45px;height:45px;margin: auto;
 	top: 10px;
 	background: url('options.png') center center; background-size: 45px; background-repeat: no-repeat;
+	transition: transform 0.2s;
+    -webkit-transition: transform 0.2s;
 	
-} #OptionsImage:hover{ background: url('PackHover.png') center center; background-size: 45px; background-repeat: no-repeat; }
+} #OptionsImage:hover{ -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
 
 
 #DexNum {
