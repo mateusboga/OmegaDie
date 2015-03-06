@@ -195,13 +195,8 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	position: relative;width:45px;height:45px;margin: auto;
 	top: 10px;
 	background: url('options.png') center center; background-size: 45px; background-repeat: no-repeat;
-	transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
 	
-} #OptionsImage:hover{ -ms-transform: rotate(360deg); /* IE 9 */
-    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
-    transform: rotate(360deg);
-}
+} #OptionsImage:hover{ background: url('optionshover.png') center center; background-size: 45px; background-repeat: no-repeat; }
 
 
 #DexNum {
