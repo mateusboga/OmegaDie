@@ -157,10 +157,9 @@ function show(id, value) {
 };
  
 window.onload = function() {
-	Title2 = readCookie('title'); Title = Title2;
-	Page2 = readCookie('page'); Page = Page2;
+	Title2 = readCookie('title'); 
+	Page2 = readCookie('page'); 
 	Inventory = readCookie('inventory');
-	R();
 	document.getElementById("PackItems").innerHTML = Inventory;
 	Start();
 	

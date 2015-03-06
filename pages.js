@@ -1,9 +1,12 @@
 
 function Start() {
-	Title = '';
-	Page = (
+	if (Title2 == "") {Title = '';}
+	if (Page2 == "") {Page = (
 	'<p><div class="link unselectable" onclick="CharCreation()">Start</div>' 
-	); R();
+	);}
+	Title = Title2;
+	Page = Page2;
+	R();
 };
 
 function CharCreation() {
