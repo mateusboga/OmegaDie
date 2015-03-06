@@ -45,11 +45,13 @@ window.setInterval(function(){
 	if (M > 0) { document.getElementById("ManaN").innerHTML = Mana + ' MANA'; };
 	if (L > 0) { document.getElementById("LuckN").innerHTML = Luck + ' LUCK'; };
 	
+}, 100);
+window.setInterval(function() {
+
 	createCookie('title', Title, 3000);
 	createCookie('page', Page, 3000);
 	createCookie('inventory', Inventory, 3000);
-	
-}, 100);
+}, 5000);
 
 function RollDice() {
 	//Random Roll
