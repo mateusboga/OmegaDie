@@ -150,8 +150,8 @@ function createHPotion() {
 function createEquipment() {
 	PotionN = 5;
 	Inventory = ( ''
-	+ '<div id="HPotions" class="itemP"><div class="itemIcon" style="background: url(items/healthpotion.png) 50px 50px"></div><div class="itemName">Health Potion ' + PotionN + 'x</div><div class="itemOptions" onclick="drinkPotion(5)">Drink</div></div>'
-	+ '<div class="itemP"><div class="itemIcon" style="background: url(items/ironsword.png); background-size: 50px 50px;"></div><div class="itemName" style="color: #5af">Iron Sword</div><div class="itemOptions" onclick="equipSword(5)">Equip</div><div class="itemOptions">Stats</div></div>'
+	+ '<div id="HPotions" class="itemP"><div class="itemIcon" style="background-image: url(items/healthpotion.png)"></div><div class="itemName">Health Potion ' + PotionN + 'x</div><div class="itemOptions" onclick="drinkPotion(5)">Drink</div></div>'
+	+ '<div class="itemP"><div class="itemIcon" style="background-image: url(items/ironsword.png)"></div><div class="itemName" style="color: #5af">Iron Sword</div><div class="itemOptions" onclick="equipSword(5)">Equip</div><div class="itemOptions">Stats</div></div>'
 	); document.getElementById("PackItems").innerHTML = Inventory; S_CloseP.play();
 	Potions = PotionN;
 };
