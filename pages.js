@@ -4,7 +4,7 @@ function Start() {
 	if (Page2 == "") {Page = (
 	'<p><div class="link unselectable" onclick="CharCreation()">Start</div>' 
 	);} else { Page = Page2; }
-	if (Inventory2 == "") {Inventory = ''} else { Inventory = Inventory2; }
+	if (Inventory2 == "") {Inventory = '';} else { Inventory = Inventory2; }
 	R(); document.getElementById("PackItems").innerHTML = Inventory;
 	Pageready = 1;
 };
@@ -150,7 +150,7 @@ function createHPotion() {
 function createEquipment() {
 	PotionN = 5;
 	Inventory = ( ''
-	+ '<div id="HPotions" class="itemP"><div class="itemIcon" style="background: url(items/healthpotion.png); background-size: 50px 50px;"></div><div class="itemName">Health Potion ' + PotionN + 'x</div><div class="itemOptions" onclick="drinkPotion(5)">Drink</div></div>'
+	+ "<div id='HPotions' class='itemP'><div class='itemIcon' style='background: url(items/healthpotion.png); background-size: 50px 50px;'></div><div class='itemName'>Health Potion " + PotionN + "x</div><div class='itemOptions' onclick='drinkPotion(5)'>Drink</div></div>"
 	+ '<div class="itemP"><div class="itemIcon" style="background: url(items/ironsword.png); background-size: 50px 50px;"></div><div class="itemName" style="color: #5af">Iron Sword</div><div class="itemOptions" onclick="equipSword(5)">Equip</div><div class="itemOptions">Stats</div></div>'
 	); document.getElementById("PackItems").innerHTML = Inventory; S_CloseP.play();
 	Potions = PotionN;
