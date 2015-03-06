@@ -166,7 +166,7 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 }
 
 #Options{
-	position:absolute; left: -500px; top: 0px; bottom: 0px;
+	position:absolute; left: -500px; top: 64px; bottom: 0px;
 	width: 500px;
 	background: rgba(60,42,26,1);
 	transition: left 0.2s;
@@ -176,7 +176,7 @@ body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cur
 	-webkit-box-shadow: 0px 0px 80px black;
 	
 } #OptionsIcon{
-	position: relative; width:64px;height:64px;left: 500px; bottom: 128px;
+	position: relative; width:64px;height:64px;left: 500px;
 	background: rgba(60,42,26,1);
 	-webkit-border-top-right-radius: 20px;
 	-webkit-border-bottom-right-radius: 20px;
