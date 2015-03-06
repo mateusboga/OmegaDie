@@ -68,7 +68,7 @@ function drinkManaPotion() {
 				S_Drink1.play();
 				MPotions -= 1;
 		};
-		document.getElementById("MPotions").innerHTML = '<div class="itemIcon" style="background: url(items/manapotion.png); background-size: 50px 50px;"></div><div class="itemName"  style="color: #491">Mana Potion ' + MPotions + 'x</div><div class="itemOptions" onclick="drinkmanaPotion(5)">Drink</div>';
+		document.getElementById("MPotions").innerHTML = '<div class="itemIcon" style="background-image: url(items/manapotion.png)"></div><div class="itemName"  style="color: #491">Mana Potion ' + MPotions + 'x</div><div class="itemOptions" onclick="drinkmanaPotion(5)">Drink</div>';
 	};
 }
 function DoDRubyChest() {
@@ -85,7 +85,7 @@ function DoDRubyChest() {
 }; function DoDtakeRubyRing() {
 	if (single == 0) {
 		Inventory = (Inventory
-		+ '<div class="itemP"><div class="itemIcon" style="background: url(items/goldenringruby1.png); background-size: 50px 50px;"></div><div class="itemName" style="color: #491">Ruby Ring</div><div class="itemOptions" onclick="equipRubyR(2)">Equip</div><div class="itemOptions">Stats</div></div>'
+		+ '<div class="itemP"><div class="itemIcon" style="background-image: url(items/goldenringruby1.png)"></div><div class="itemName" style="color: #491">Ruby Ring</div><div class="itemOptions" onclick="equipRubyR(2)">Equip</div><div class="itemOptions">Stats</div></div>'
 		); document.getElementById("PackItems").innerHTML = Inventory; S_CloseP.play();
 		single++
 	}
@@ -155,7 +155,7 @@ function DoDShelf1Magic() {
 } function DoDcreateMagicBook() {
 	if (single == 0) {
 		Inventory = (Inventory
-		+ '<div class="itemP"><div class="itemIcon" style="background: url(items/magicbook.png); background-size: 50px 50px;"></div><div class="itemName" style="color: #5af">Magic Book</div><div class="itemOptions" onclick="DoDReadMagic()">Read</div></div>'
+		+ '<div class="itemP"><div class="itemIcon" style="background-image: url(items/magicbook.png)"></div><div class="itemName" style="color: #5af">Magic Book</div><div class="itemOptions" onclick="DoDReadMagic()">Read</div></div>'
 		); document.getElementById("PackItems").innerHTML = Inventory; S_CloseP.play();
 		single++
 	}
@@ -191,7 +191,7 @@ function DoDShelf1Cook() {
 } function DoDcreateKey(x) {
 	if (single == 0) {
 		Inventory = (Inventory
-		+ '<div id="Key'+x+'" class="itemP"><div class="itemIcon" style="background: url(items/bronzekey.png); background-size: 50px 50px;"></div><div class="itemName">Bronze Key (12)</div></div>'
+		+ '<div id="Key'+x+'" class="itemP"><div class="itemIcon" style="background-image: url(items/bronzekey.png)"></div><div class="itemName">Bronze Key (12)</div></div>'
 		); document.getElementById("PackItems").innerHTML = Inventory; S_CloseP.play();
 		single++
 	}

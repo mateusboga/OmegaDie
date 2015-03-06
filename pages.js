@@ -144,7 +144,7 @@ function howitems() {
 };
 function createHPotion() {
 	Inventory = ( Inventory
-	+ '<div class="itemP"><div class="itemIcon" style="background: url(items/healthpotion.png); background-size: 50px 50px;"></div></div>'
+	+ '<div class="itemP"><div class="itemIcon" style="background-image: url(items/healthpotion.png)"></div></div>'
 	); document.getElementById("PackItems").innerHTML = Inventory; S_Page1.play();
 };
 function createEquipment() {
@@ -177,7 +177,7 @@ function drinkPotion(PotionHeal) {
 			};
 			
 		};
-		document.getElementById("HPotions").innerHTML = '<div class="itemIcon" style="background: url(items/healthpotion.png); background-size: 50px 50px;"></div><div class="itemName">Health Potion ' + Potions + 'x</div><div class="itemOptions" onclick="drinkPotion(5)">Drink</div>';
+		document.getElementById("HPotions").innerHTML = '<div class="itemIcon" style="background-image: url(items/healthpotion.png)"></div><div class="itemName">Health Potion ' + Potions + 'x</div><div class="itemOptions" onclick="drinkPotion(5)">Drink</div>';
 	};
 }
 function beginAdventure() {
