@@ -1,10 +1,8 @@
 N = 0; //Number of the dice
 Rolled = 0; //Number of times the dice has been rolled
-Title = "";
-Page = "";
-Title2 = '';
-Page2 = ''; Pageready = 0;
-Inventory = "";
+Title = ""; Title2 = '';
+Page = ""; Page2 = ''; Pageready = 0;
+Inventory = ""; Inventory2 = "";
 Dset = 0;
 Sset = 0;
 Mset = 0;
