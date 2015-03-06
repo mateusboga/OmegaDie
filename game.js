@@ -13,6 +13,7 @@ M = 0; Mana = 0; Mextra = 0;
 L = 0; Luck = 0; Lextra = 0;
 Add = 0; //The number that adds to the dice when you roll
 pack = 0; //Whether I have the pack open or not
+options = 0; //Whether I have the options open or not
 
 //Audio files
 var S_Roll1 = new Audio("dice/1die1.wav"); var S_Roll2 = new Audio("dice/1die2.wav"); var S_Roll3 = new Audio("dice/1die3.wav"); var S_Roll4 = new Audio("dice/1die1.wav"); var S_Roll5 = new Audio("dice/1die2.wav"); var S_Roll6 = new Audio("dice/1die3.wav");
@@ -114,7 +115,7 @@ function checkKeyPressed(e) {
         LoadPack();
     }
 	if (e.keyCode == "27") {
-        ClosePack();
+        CloseAll();
     }
 }
 
@@ -122,23 +123,52 @@ function LoadPack() {
 	if (pack == 0){
 		pack = 1;
 		Pack = document.getElementById("Backpack");
+		Options = document.getElementById("Options");
 		Pack.style.left = (Pack.style.left = "0px");
 		S_OpenP.play();
+		Options.style.visibility = (Options.style.visibility = "hidden");
 	}
 	else {
 		pack = 0;
 		Pack = document.getElementById("Backpack");
+		Options = document.getElementById("Options");
 		Pack.style.left = (Pack.style.left = "-500px");
 		S_CloseP.play();
+		Options.style.visibility = (Options.style.visibility = "visible");
 	};
-}; function ClosePack() { 
+}; function CloseAll() { 
 	if (pack == 1){
 		pack = 0;
 		Pack = document.getElementById("Backpack");
 		Pack.style.left = (Pack.style.left = "-500px");
 		S_CloseP.play();
 	}
+	if (options == 1){
+		options = 0;
+		Options = document.getElementById("Options");
+		Options.style.left = (Options.style.left = "-500px");
+		S_CloseP.play();
+	}
 	ClearDice();
+};
+
+function LoadOptions() {
+	if (options == 0){
+		options = 1;
+		Options = document.getElementById("Options");
+		Pack = document.getElementById("Backpack");
+		Options.style.left = (Options.style.left = "0px");
+		S_OpenP.play();
+		Pack.style.visibility = (Pack.style.visibility = "hidden");
+	}
+	else {
+		options = 0;
+		Options = document.getElementById("Options");
+		Pack = document.getElementById("Backpack");
+		Options.style.left = (Options.style.left = "-500px");
+		S_CloseP.play();
+		Pack.style.visibility = (Pack.style.visibility = "visible");
+	};
 };
 
 /*
