@@ -429,7 +429,8 @@ function DoDRoom1Hide2() {
 		+ 'You did not have time to hide when he entered. The man is short, wears a bathrobe and looks at you '
 		+ 'surprised.<p>'
 		+ '"And who are you?", he asks drily.<p>'
-		+ 'What do you say?'
+		+ '<div class="link unselectable" onclick="DoDRoom1Speak1()">Say you are a messager</div>'
+		+ '<div class="link unselectable" onclick="DoDRoom1Speak2()">Say you are new here</div>'
 		
 		); R();
 	};
