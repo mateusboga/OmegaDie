@@ -6,13 +6,51 @@ body{ font-family: 'Vollkorn', arial; background: #0b0401; overflow: hidden; cur
 	-webkit-box-shadow: 0px 0px 80px 10px rgba(0, 0, 0, 1.0) inset;
 	color: black;
 }
+#Logo {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	height: 64px;
+	width: 128px;
+	background: url(logo.png);
+	background-size: 128px 64px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	cursor: url(cursorpointer.gif), pointer;
+	color: rgba(0, 0, 0, 0.0);
+} #Logo:hover { background: url(logohover.png); background-size: 128px 64px; background-repeat: no-repeat; background-position: bottom;}
 
 
-
-
-
-
-
+#loading {
+	display: block;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background: #110500;
+	box-shadow: 0px 0xp 250px black inset;
+	-webkit-box-shadow: 0px 0px 250px black inset;
+}
+#loadingIcon {
+	position: relative;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 256px;
+	height: 256px;
+	background: url(dice/diceroll/loading.gif);
+}
+#loadingtext {
+	position: relative;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 0px 0px 20px black;
+}
 
 
 ::-webkit-scrollbar {
