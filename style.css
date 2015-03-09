@@ -33,11 +33,23 @@ body {
 	background: #2d1409;
 	box-shadow: 0px 0px 220px black inset;
 	-webkit-box-shadow: 0px 0px 220px black inset;
-	text-shadow: 0px 0px 50pc black;
+	text-shadow: 0px 0px 50px black;
 } #loadingIcon {
 	position: relative;
 	background-image: url(dice/diceroll/red_loading.gif); background-size: 64px; background-repeat: no-repeat; background-position: center;
-	margin-left: auto;
-    margin-right: auto;
+	margin-left: auto; margin-right: auto;
 	width: 128px; height: 64px;
+}
+
+
+#textscreen {
+	position:absolute;
+	display:block;
+	background:url(old_paper.jpg) center; background-size: 600px;
+	top:0px; bottom:0px;
+	margin-left:50%; margin-right:50%;
+	transform: translate(-50%, 0px);
+	width:600px;
+	box-shadow: 0px 0px 220px black;
+	-webkit-box-shadow: 0px 0px 220px black;
 }
