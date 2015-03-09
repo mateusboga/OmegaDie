@@ -7,7 +7,6 @@ function show(id, value) {
     document.getElementById(id).style.display = value ? 'block' : 'none';
 };
 
-window.onload = function() {
-	
+document.addEventListener('DOMContentLoaded', function() {
 	show('loading', false);
-};
+}, false);
