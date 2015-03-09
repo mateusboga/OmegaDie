@@ -1,3 +1,4 @@
 body {
-	cursor: url(cursormain.gif) default;
+	cursor: url(cursormain.gif) main;
+	background: #333;
 }
