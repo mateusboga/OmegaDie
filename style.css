@@ -4,10 +4,38 @@ body{ font-family: 'Vollkorn', arial; background: #0b0401; overflow: hidden; cur
 	left: 0px;right: 0px;top: 0px;bottom: 0px;
 	color: black;
 }
+
+
+
+
+
+
+
+
 #Loading {
+	display: block;
 	position: absolute;
 	background: #120;
 	left: 0px;right: 0px;top: 0px;bottom: 0px;
 	box-shadow: 0px 0xp 150px 10px rgba(0, 0, 0, 1.0) inset;
 	-webkit-box-shadow: 0px 0px 150px 10px rgba(0, 0, 0, 1.0) inset;
+}
+#loadingIcon {
+	position: relative;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 256px;
+	height: 256px;
+	background: url(dice/diceroll/loading.gif);
+}
+#loadingtext {
+	position: relative;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 0px 0px 20px black;
 }
