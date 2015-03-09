@@ -1,4 +1,43 @@
 body {
-	cursor: url(cursormain.gif);
-	background: #333;
+	cursor: url(cursormain.gif), default;
+	background: #0b0401;
+	color: #dadada;
+	font-family: 'Vollkorn', arial;
+	overflow: hidden;
+}
+#wrapper {
+	position: absolute;
+	left: 0px; right: 0px; top: 0px; bottom: 0px;
+	background-image: url(background3.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 1365px 767px;
+}
+#Logo {
+	position: absolute;
+	right: 0px; bottom: 0px;
+	width: 128px;
+	height: 64px;
+	background-image: url(logo.png);
+	background-size: 128px 64px;
+	text-indent: -999em;
+	cursor: url(cursorpointer.gif), pointer;
+} #Logo:hover { background-image: url(logohover.png); }
+#loading {
+	display: block;
+	position: absolute;
+	left: 0px; right: 0px; top: 0px; bottom: 0px;
+	padding: 50px 200px;
+	text-align: center;
+	font-size: 30px;
+	background: #2d1409;
+	box-shadow: 0px 0px 220px black inset;
+	-webkit-box-shadow: 0px 0px 220px black inset;
+	text-shadow: 0px 0px 50pc black;
+} #loadingIcon {
+	position: relative;
+	background-image: url(dice/diceroll/red_loading.gif); background-size: 128px; background-repeat: no-repeat; background-position: center;
+	margin-left: auto;
+    margin-right: auto;
+	width: 128px; height: 128px;
 }
