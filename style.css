@@ -1,6 +1,6 @@
-body{ font-family: 'Vollkorn', arial; background: #0e0905; overflow: hidden; cursor: url(cursormain.gif), default;  }.unselectable {-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+body{ font-family: 'Vollkorn', arial; background: #0b0401; overflow: hidden; cursor: url(cursormain.gif), default;  }.unselectable {-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 #wrapper{ position: absolute;
-	background: url(background1.png); background-position: center top; background-repeat: no-repeat;
+	background: url(background3.png); background-position: center top; background-repeat: no-repeat;
 	left: 0px;right: 0px;top: 0px;bottom: 0px;
 	box-shadow: 0px 0xp 80px 10px rgba(0, 0, 0, 1.0) inset;
 	-webkit-box-shadow: 0px 0px 80px 10px rgba(0, 0, 0, 1.0) inset;
