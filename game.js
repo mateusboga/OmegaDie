@@ -8,10 +8,6 @@ function show(id, value) {
 };
  
 window.onload = function() {
-	Title2 = readCookie('title'); 
-	Page2 = readCookie('page'); 
-	Inventory2 = readCookie('inventory');
-	Start();
 	
 	onReady(function () { show('loading', false); }); 
 };
