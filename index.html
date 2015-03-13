@@ -18,8 +18,31 @@
 				<div id="shadow"></div>
 			</div>
 			<div id="statscreen">
+				<div id="xIns" onClick="ManageInst(0)"></div>
+				<div id="instruction"></div>
 			</div>
-			<div id="fightscreen">
+			<div id="fightscreen" class="Killed">
+				<div id="playerStats">
+					<div id="playerName">You</div>
+					<div id="playerDice" class="RdiceStill shadowed" onClick="Attack()">
+						<div id="Result" class="Result"></div>
+					</div>
+					<div id="playerDex">Dexterity: <a id="pDexn" class="statNumber" style="color:#09f"></a></div>
+					<div id="playerMana">Mana: <a id="pManan" class="statNumber"></a></div>
+					<div id="playerLuck">Luck: <a id="pLuckn" class="statNumber"></a></div>
+					<div id="playerStr">Strength: <a id="pStrn" class="statNumber" style="color:#f20"></a></div>
+				</div>
+				<div id="enemyStats" class="Killed">
+					<div id="enemyName">Enemy</div>
+					<div id="enemyDice" class="BdiceStill shadowed">
+						<div id="eResult" class="Result"></div>
+					</div>
+					<div id="enemyIcon"></div>
+					<div id="enemyDex">Dexterity: <a id="eDexn" class="statNumber" style="color:#09f"></a></div>
+					<div id="enemyMana">Mana: <a id="eManan" class="statNumber"></a></div>
+					<div id="enemyStr">Strength: <a id="eStrn" class="statNumber" style="color:#f20"></a></div>
+				</div>
+				<div id="Hit" class="Hit0">0</div>
 			</div>
 			<div id="inventoryscreen">
 			</div>

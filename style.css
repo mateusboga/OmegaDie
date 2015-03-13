@@ -10,6 +10,12 @@ body {
         -webkit-user-select: none; 
         -o-user-select: none; 
 }
+.shadowed {
+    -webkit-filter: drop-shadow(5px 15px 10px rgba(0,0,0,0.8));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
 #wrapper {
 	position: absolute;
 	left: 0px; right: 0px; top: 0px; bottom: 0px;
@@ -89,4 +95,184 @@ body {
 	background: linear-gradient(to bottom,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.15) 1%,rgba(0,0,0,0) 6%,rgba(0,0,0,0) 79%,rgba(0,0,0,0.60) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26000000', endColorstr='#73000000',GradientType=0 );
 	pointer-events:none;
+}
+#statscreen {
+	display: none;
+	position: absolute;
+	left: 15%; right: 15%; top: 50px; height: 500px;
+	background: rgba(0, 0, 0, 0.9);
+	border-radius: 10px;
+	box-shadow: 0px 0px 220px black inset, 0px 0px 50px black;
+	-webkit-box-shadow: 0px 0px 220px black inset, 0px 0px 50px black;
+	text-align: center;
+}
+#xIns { background:url(close.png); position:absolute; right: 0px; width: 32px; height:32px; cursor:url(cursorpointer.gif), pointer; }
+#xIns:hover {	background:url(closehover.png);	}
+#instruction{
+	position: relative;
+	font-size: 20px;
+	top: 20px;
+	width: 500px;height:300px;
+	margin-left:50%; margin-right:50%;
+	transform: translate(-50%, 0px);
+	overflow-y: auto;
+}
+
+
+#fightscreen{
+	display: block;
+	position: absolute;
+	left: 0px; right: 0px; top: 0px; bottom: 0px;
+	background: #000 url(darknessbackground.jpg) no-repeat;
+	background-size: 100% 100%;
+	transition: transform 1.0s;
+	-webkit-transition: transform 1.0s;
+}
+
+
+
+
+
+
+
+#playerStats {
+	position: absolute;
+	background: rgba(10, 10, 10, 0.5);
+	left: 20px; height:500px;; top: 40px;
+	width:300px;
+	transition: transform 1.0s;
+	-webkit-transition: transform 1.0s;
+}
+#playerName{ display:block;position:absolute;left:40%;top:0px;font-size:35px;font-weight:bold; }
+#playerDex{ display:block;position:absolute;left:70px;top:160px;font-size:30px;color:#fa0 }
+#playerStr{ display:block;position:absolute;left:70px;top:240px;font-size:30px;color:#fa0 }
+#playerMana{ display:block;position:absolute;left:30px;top:200px;font-size:30px;color:#d70 }
+#playerLuck{ display:block;position:absolute;left:30px;top:280px;font-size:30px;color:#d70 }
+#playerDice{
+	position: absolute; top: 40px;right: 30px; width: 128px; height: 128px;
+	background-size: 128px;
+	transition: transform 0.2s;
+	-webkit-transition: transform 0.2s;
+}
+#playerDice:hover{
+	transform: rotate(10deg)
+}
+
+.Result{ position:absolute;top:40px;left:0px;right:0px;font-size:35px;color:#fee68d;text-shadow:0px 0px 10px;text-align:center; }
+#Hit{ 
+	position:absolute;top:10px;left:0px;right:0px;height:110px;
+	font-size:70px;text-align:center;color:#fb5;
+	background:url(icons/hitbg1.png) no-repeat top;background-size:64px;
+	text-shadow: 0px 0px 30px #f30;
+	
+}
+.RdiceStill{ background-image: url(dice/reddice.png); }
+.RdiceStill:active{ background-image: url(dice/diceroll/reddicerollin.gif); }
+.RdiceResult{ background-image: url(dice/diceroll/reddicerollin.gif); }
+.RdiceResulted{ background-image: url(dice/reddiceresult.png); }
+
+.statNumber{ position:absolute;top: 0px;right: -38px; }
+.EstatNumber{ position:absolute;top: 0px;right: -38px; }
+
+.BdiceStill{ background-image: url(dice/bluedice.png); }
+.BdiceResult{ background-image: url(dice/diceroll/bluedicerollin.gif); }
+.BdiceResulted{ background-image: url(dice/bluediceresult.png); }
+
+
+
+
+
+.Hit0{ opacity:0; transition: opacity 1.5s; -webkit-transition: opacity 1.5s; }
+.Hit1{ opacity:1; transition: opacity 0.0s; -webkit-transition: opacity 0.0s;}
+
+
+
+
+
+#enemyStats {
+	position: absolute;
+	background: rgba(10, 10, 10, 0.5);
+	right: 20px; height:350px; top: 40px;
+	width:300px;
+	transition: transform 1.0s;
+	-webkit-transition: transform 1.0s;
+}
+#enemyName{ position:absolute;left:0px;right:0px;font-size:25px;color:#f22;text-align:center;font-weight:bold; }
+#enemyDex{ position:absolute;left:15px;top:160px;font-size:30px;color:#ddd; }
+#enemyMana{ position:absolute;left:50px;top:200px;font-size:30px;color:#999; }
+#enemyStr{ position:absolute;left:15px;top:240px;font-size:30px;color:#ddd; }
+#enemyDice{
+	position: absolute; top: 40px;left:20px; width: 128px; height: 128px;
+	background-size: 128px;
+	transition: transform 0.2s;
+	-webkit-transition: transform 0.2s;
+}
+#enemyIcon{position:absolute;background:;width:128px;height:128px;right:30px;top:20px;}
+.Killed{ transform: translate(0px, 1000px); }
+
+
+
+.ApxS{
+	-webkit-filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+.Button{
+	color:#039;font-weight:bold;cursor:url(cursorpointer.gif), pointer;text-shadow:0px 2px 2px rgba(0, 0, 0, 0.2);
+	transition: text-shadow 0.2s, letter-spacing 0.2s;
+	-webkit-transition: text-shadow 0.2s, letter-spacing 0.2s;
+}
+.Button:before{
+	content:url(bapexleft.png); position:relative;bottom:-4px;right:20px;
+	background:;width:32px;height:32px;
+	transition: right 0.1s;
+	-webkit-transition: right 0.1s;
+}
+.Button:after{
+	content:url(bapexright.png); position:relative;bottom:-4px;left:20px;
+	background:;width:32px;height:32px;
+	transition: left 0.1s;
+	-webkit-transition: left 0.1s;
+}
+.Button:hover{ color:#05c;letter-spacing:1px;text-shadow:0px 4px 7px rgba(0, 0, 0, 0.2); }
+.Button:hover:before{
+	right:40px;
+}
+.Button:hover:after{
+	left:40px;
+}
+.Button:active{
+	letter-spacing:-2px;
+}
+
+
+
+
+
+.Shaked{ 
+	-webkit-animation-name: shake;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-timing-function: linear;
+    animation-name: shake;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes shake {
+    0%   {transform: rotate(5deg)}
+    25%  {transform: rotate(-5deg)}
+	50%  {transform: rotate(5deg)}
+    75%  {transform: rotate(-5deg)}
+    100% {transform: rotate(0deg)}
+}
+@keyframes shake {
+    0%   {transform: rotate(5deg)}
+    25%  {transform: rotate(-5deg)}
+	50%  {transform: rotate(5deg)}
+    75%  {transform: rotate(-5deg)}
+    100% {transform: rotate(0deg)}
+}
+@font-face {
+	font-family: DarkCrystal;
+	src: url(DCO.ttf);
 }
